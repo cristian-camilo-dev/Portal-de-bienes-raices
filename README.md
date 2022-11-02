@@ -15,3 +15,8 @@ portal de bienes raices donde los visitantes podrán crear su cuenta, confirmarl
 
  - =="server"== : "nodemon index.js"
  - =="start"==: "node index.js",
+
+
+# Imagenes
+
+[![node](https://railsware.com/blog/wp-content/uploads/2018/09/2400%D1%851260-rw-blog-node-js.png "node")](http://https://railsware.com/blog/wp-content/uploads/2018/09/2400%D1%851260-rw-blog-node-js.png "node")
