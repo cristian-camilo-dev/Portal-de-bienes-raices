@@ -2,13 +2,11 @@ import express from 'express';
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.send('Ruta de usuarios');
+router.get('/login', (req, res) => {
+   res.render('auth/login');
 });
 
-router.get('/nosotros', (req, res) => {
-    res.send('Ruta de nosotros');
-});
+
 
 
 

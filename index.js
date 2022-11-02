@@ -1,12 +1,19 @@
 import express from "express";
 import usuarioRouter from "./routes/usuarioRouter.js";
 
-
 //crear app
 const app = express();
 
+/*habilitar pug
+.set es un metodo de express para configurar cosas de express
+(como el motor de plantillas)*/
+app.set("view engine", "pug");
+app.set("views", "./views");
+
+
+
 //rutas
-app.use('/', usuarioRouter);
+app.use('/auth', usuarioRouter);
 
 
 //Defenir el puerto
