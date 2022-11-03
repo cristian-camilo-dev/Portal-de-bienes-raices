@@ -20,3 +20,5 @@ portal de bienes raices donde los visitantes podrán crear su cuenta, confirmarl
 # Imagenes
 
 [![node](https://railsware.com/blog/wp-content/uploads/2018/09/2400%D1%851260-rw-blog-node-js.png "node")](http://https://railsware.com/blog/wp-content/uploads/2018/09/2400%D1%851260-rw-blog-node-js.png "node")
+
+[![pug](https://res.cloudinary.com/practicaldev/image/fetch/s--dVi3vvBB--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/j5oesanbo9qd8ftk3p0v.png "pug")](http://https://res.cloudinary.com/practicaldev/image/fetch/s--dVi3vvBB--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/j5oesanbo9qd8ftk3p0v.png "pug")
