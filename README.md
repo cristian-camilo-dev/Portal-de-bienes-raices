@@ -10,12 +10,16 @@ portal de bienes raices donde los visitantes podrán crear su cuenta, confirmarl
 # Dependencias Dev
 
 - nodemon
+- autoprefixer
+- postcss  
+  -postcss-cli
+- tailwindcss
 
 # "scripts"
 
- - =="server"== : "nodemon index.js"
- - =="start"==: "node index.js",
-
+- "server" : "nodemon index.js"
+- "start": "node index.js",
+- "css": "postcss css/app.css -o public/css/app.css"
 
 # Imagenes
 

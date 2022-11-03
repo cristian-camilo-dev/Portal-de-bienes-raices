@@ -1,10 +1,6 @@
-h2 login 
+extends ../layout/index  
+block contenido
+    div 
+      h2.text-6xl.text-center Iniciar sesion
+      p(class="text-center text-2xl text-purple-800") Inicia sesion para administrar tus propiedades
 
-form(action="/login", method="post")
-  div
-    label(for="email") Email
-    input(type="email", name="email", id="email")
-  div
-    label(for="password") Password
-    input(type="password", name="password", id="password")
-  button(type="submit") Login

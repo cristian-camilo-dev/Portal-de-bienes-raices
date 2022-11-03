@@ -10,6 +10,9 @@ const app = express();
 app.set("view engine", "pug");
 app.set("views", "./views");
 
+//habilitar carpeta publica
+app.use(express.static("public"));
+
 
 
 //rutas
