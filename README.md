@@ -6,6 +6,8 @@ portal de bienes raices donde los visitantes podrán crear su cuenta, confirmarl
 
 - Express
 - pug
+- mysql2
+- sequelize
 
 # Dependencias Dev
 
