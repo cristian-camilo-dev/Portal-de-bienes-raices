@@ -1,10 +1,39 @@
-h2 Registro 
+extends ../layout/index  
+block contenido
+  div(class="container grid-cols-2")
+     
+       h1.text-6xl.text-center Bienes 
+         span(class="font-normal") Raices
+       p(class="text-center text-2xl text-purple-800 ") Registrate para administrar tus propiedades
 
-form(action="/registro", method="post")
-  div
-    label(for="email") Email
-    input(type="email", name="email", id="email")
-  div
-    label(for="password") Password
-    input(type="password", name="password", id="password")
-  button(type="submit") Registro.
+       h2(class="text-center text-2xl text-purple-800")= pagina 
+
+       div(class="mt-8 mx-auto max-w-md")
+         div(class="bg-white py-8 px-4 shadow ")
+           form(action="" method="POST")
+             div
+               label(for="nombre" class="block text-gray-500 text-sm font-bold mb-2") Tu Nombre 
+               input(id="nombre" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name ="nombre" placeholder="Tu Nombre")
+
+             div(class="mt-4")
+               label(for="email" class="block text-gray-500 text-sm font-bold mb-2") Tu Email 
+               input(id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-500 leading-tight focus:outline-none focus:shadow-outline" type="email" name ="email" placeholder="Tu Email") 
+
+             div(class="mt-4")
+               label(for="password" class="block text-gray-500 text-sm font-bold mb-2") Tu Password
+               input(id="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-500 leading-tight focus:outline-none focus:shadow-outline" type="password" name ="password" placeholder="Tu Password")  
+
+             div(class="mt-4")
+               label(for="repetir_password" class="block text-gray-500 text-sm font-bold mb-2") Repetir Password
+               input(id="repetir_password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-500 leading-tight focus:outline-none focus:shadow-outline" type="password" name ="repetir_password" placeholder="Tu Password")                  
+
+             div(class="mt-4 flex justify-between items-center")
+                a(href="/auth/login" class="text-gray-500 text-xs") ¿ya tienes cuenta?
+                a(href="/auth/restablecer" class="text-gray-500 text-xs") ¿olvidaste tu contraseña? 
+               
+
+             div(class="mt-4 flex justify-center items-center")
+               input(class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline cursor-pointer " type="submit" value="Crear Cuenta") 
+     
+        
+
