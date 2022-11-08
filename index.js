@@ -1,8 +1,18 @@
 import express from "express";
 import usuarioRouter from "./routes/usuarioRouter.js";
+import db from "./config/db.js";
 
 //crear app
 const app = express();
+
+//conectar a la base de datos
+
+try {
+  await db.authenticate();
+  console.log("Conectado a la base de datos");
+} catch (error) {
+  console.log("Error al conectar a la base de datos");
+}
 
 /*habilitar pug 
 .set es un metodo de express para configurar cosas de express
