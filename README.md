@@ -8,6 +8,7 @@ portal de bienes raices donde los visitantes podrán crear su cuenta, confirmarl
 - pug
 - mysql2
 - sequelize
+- dotenv
 
 # Dependencias Dev
 
