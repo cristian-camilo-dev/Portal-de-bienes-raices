@@ -11,8 +11,13 @@ try {
   await db.authenticate();
   console.log("Conectado a la base de datos");
 } catch (error) {
+  console.log(error);
   console.log("Error al conectar a la base de datos");
+  
 }
+
+//habilitar datos de formulario
+app.use(express.urlencoded({ extended: true }));
 
 /*habilitar pug 
 .set es un metodo de express para configurar cosas de express

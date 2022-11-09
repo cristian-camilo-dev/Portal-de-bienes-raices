@@ -10,6 +10,12 @@ const formularioRegistro = (req, res) => {
     });
 }
 
+const registar = (req, res) => {
+    console.log(req.body);
+    res.send('Enviado');
+
+}
+
 
 const formularioRestablecerPassword = (req, res) => {
     res.render('auth/restablecer',{
@@ -24,5 +30,6 @@ const formularioRestablecerPassword = (req, res) => {
 export{
     formularioLogin,
     formularioRegistro,
+    registar,
     formularioRestablecerPassword
 }
