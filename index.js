@@ -9,6 +9,7 @@ const app = express();
 
 try {
   await db.authenticate();
+  db.sync();//.sync() es un metodo de sequelize que crea la tabla en la base de datos
   console.log("Conectado a la base de datos");
 } catch (error) {
   console.log(error);
