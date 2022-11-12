@@ -9,6 +9,7 @@ portal de bienes raices donde los visitantes podrán crear su cuenta, confirmarl
 - mysql2
 - sequelize
 - dotenv
+- express-validator
 
 # Dependencias Dev
 

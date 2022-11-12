@@ -8,16 +8,23 @@ block contenido
 
        h2(class="text-center text-2xl text-purple-800")= pagina 
 
+       if errores 
+           div(class='max-w-md mx-auto my-10')
+               each error in errores
+                   div(class='bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-5' role='alert')
+                       p(class='font-bold') Error
+                       p(class='text-sm')= error.msg
+
        div(class="mt-8 mx-auto max-w-md")
          div(class="bg-white py-8 px-4 shadow ")
            form(action="/auth/registro" method="POST")
              div
                label(for="nombre" class="block text-gray-500 text-sm font-bold mb-2") Tu Nombre 
-               input(id="nombre" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name ="nombre" placeholder="Tu Nombre")
+               input(id="nombre" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name ="nombre" value= usuario ? usuario.name : ""  placeholder="Tu Nombre")
 
              div(class="mt-4")
                label(for="email" class="block text-gray-500 text-sm font-bold mb-2") Tu Email 
-               input(id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-500 leading-tight focus:outline-none focus:shadow-outline" type="email" name ="email" placeholder="Tu Email") 
+               input(id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-500 leading-tight focus:outline-none focus:shadow-outline" type="email" name ="email" value= usuario ? usuario.email : "" placeholder="Tu Email") 
 
              div(class="mt-4")
                label(for="password" class="block text-gray-500 text-sm font-bold mb-2") Tu Password
